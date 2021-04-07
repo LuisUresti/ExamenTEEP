@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "52b50af2-9734-41ac-a4b0-15dcc6faeea5",
+		"name": "Examen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Food_types",
+			"item": [
+				{
+					"name": "MyEndpoints",
+					"item": [
+						{
+							"name": "Food_types",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/food_types",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"food_types"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Food_types",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"luis1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/food_types",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"food_types"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Food_types",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/food_types/a02142d6-e6a5-4065-8d82-f83dd2b91dd3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"food_types",
+										"a02142d6-e6a5-4065-8d82-f83dd2b91dd3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Put Food_types",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"luis2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/food_types/a02142d6-e6a5-4065-8d82-f83dd2b91dd3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"food_types",
+										"a02142d6-e6a5-4065-8d82-f83dd2b91dd3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Restaurant",
+			"item": [
+				{
+					"name": "MyEndpoints",
+					"item": [
+						{
+							"name": "Create Restaurant",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Luis123\",\r\n    \"description\": \"adsfsd\", \r\n    \"logo\": \"123\", \r\n    \"rating\": 2, \r\n    \"food_type\": [\r\n        \"a0ec5cd9-c3bb-42a0-9d71-ab82c60c47cb\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/restaurant",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"restaurant"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Restaurant",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/restaurant",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"restaurant"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Put Restaurant",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"luis4\",\r\n    \"description\": \"asdqwe123\", \r\n    \"logo\": \"asd\", \r\n    \"rating\": 2.9,\r\n    \"reviews\": [\r\n        \"9643db6a-b368-4842-b314-df57e51c9180\"\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/restaurant/c84a150a-648f-44da-962a-c6de9ca3a154",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"restaurant",
+										"c84a150a-648f-44da-962a-c6de9ca3a154"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Restaurant",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/restaurant/33f77fc8-5512-4732-bc29-05f2d44e8a89",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"restaurant",
+										"33f77fc8-5512-4732-bc29-05f2d44e8a89"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "MyEndpoints",
+					"item": [
+						{
+							"name": "Reviews",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/reviews",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"reviews"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reviews Byslug",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/reviews/dc21d129-7933-4493-a7b6-88994d962adc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"reviews",
+										"dc21d129-7933-4493-a7b6-88994d962adc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delet Byslug",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/reviews/dc21d129-7933-4493-a7b6-88994d962adc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"reviews",
+										"dc21d129-7933-4493-a7b6-88994d962adc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create reviews",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"restaurant\": \"c84a150a-648f-44da-962a-c6de9ca3a154\", \r\n    \"email\": \"12345@gmail.com\", \r\n    \"comments\": \"\", \r\n    \"rating\": 1.5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/reviews",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"reviews"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Put reviews",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"restaurant\": \"1234\", \r\n    \"email\": \"1234@gmail.com\", \r\n    \"comments\": \"asdasd\", \r\n    \"rating\": 2.5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/reviews/dc21d129-7933-4493-a7b6-88994d962adc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"reviews",
+										"dc21d129-7933-4493-a7b6-88994d962adc"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
